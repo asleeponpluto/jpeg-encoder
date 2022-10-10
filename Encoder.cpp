@@ -254,5 +254,7 @@ void Encoder::writeJPEG(const std::string &path) const {
     }
 
     TooJpeg::writeJpeg(wf, blocks, width, height);
+
+    wf.close();
 }
 
